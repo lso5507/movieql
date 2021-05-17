@@ -1,0 +1,14 @@
+type Movies{
+    id:Int!
+    title:String!
+    rating:Float!
+    summary:String
+    language:String
+    medium_cover_image:String
+}
+
+type Query{
+    movies(limit:Int,rating:Float):[Movies]!
+    
+}
+
